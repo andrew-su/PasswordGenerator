@@ -1,4 +1,4 @@
-package io.github.andrew_su.passwordgenerator;
+package io.github.andrew_su.passwordgenerator2;
 
 import android.content.ContentProviderOperation;
 import android.content.Context;
@@ -8,7 +8,7 @@ import android.os.RemoteException;
 import android.support.v4.app.LoaderManager;
 import android.support.v4.content.AsyncTaskLoader;
 import android.support.v4.content.Loader;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Menu;
@@ -28,10 +28,10 @@ import java.util.Random;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnClick;
-import io.github.andrew_su.passwordgenerator.datasets.PasswordTable;
-import io.github.andrew_su.passwordgenerator.providers.PasswordContentProvider;
+import io.github.andrew_su.passwordgenerator2.datasets.PasswordTable;
+import io.github.andrew_su.passwordgenerator2.providers.PasswordContentProvider;
 
-public class MainActivity extends ActionBarActivity implements View.OnClickListener, LoaderManager.LoaderCallbacks<Void> {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, LoaderManager.LoaderCallbacks<Void> {
     private static final String TAG = MainActivity.class.getSimpleName();
     private static final int LOADER_ID = 100;
     private static final String sLowerCase = "abcdefghijklmnopqrstuvwxyz";

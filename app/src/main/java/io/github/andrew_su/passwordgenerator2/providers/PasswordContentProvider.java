@@ -1,8 +1,8 @@
-package io.github.andrew_su.passwordgenerator.providers;
+package io.github.andrew_su.passwordgenerator2.providers;
 
 import android.net.Uri;
 
-import io.github.andrew_su.passwordgenerator.datasets.PasswordTable;
+import io.github.andrew_su.passwordgenerator2.datasets.PasswordTable;
 import io.pivotal.arca.provider.DatabaseConfiguration;
 import io.pivotal.arca.provider.DatabaseProvider;
 

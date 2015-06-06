@@ -1,4 +1,4 @@
-package io.github.andrew_su.passwordgenerator;
+package io.github.andrew_su.passwordgenerator2;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,8 +17,8 @@ import android.widget.TextView;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import io.github.andrew_su.passwordgenerator.datasets.PasswordTable;
-import io.github.andrew_su.passwordgenerator.providers.PasswordContentProvider;
+import io.github.andrew_su.passwordgenerator2.datasets.PasswordTable;
+import io.github.andrew_su.passwordgenerator2.providers.PasswordContentProvider;
 
 public class PasswordActivity extends ActionBarActivity implements LoaderManager.LoaderCallbacks<Cursor> {
     private static final int LOADER_ID = 2;

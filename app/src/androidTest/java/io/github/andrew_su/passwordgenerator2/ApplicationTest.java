@@ -1,4 +1,4 @@
-package io.github.andrew_su.passwordgenerator;
+package io.github.andrew_su.passwordgenerator2;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

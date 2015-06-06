@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
 
 android {
     compileSdkVersion 22
     buildToolsVersion "22.0.1"
-
     defaultConfig {
-        applicationId "io.github.andrew_su.passwordgenerator"
+        applicationId "io.github.andrew_su.passwordgenerator2"
         minSdkVersion 8
         targetSdkVersion 22
         versionCode 1
@@ -17,11 +17,34 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    productFlavors {
+        mock {
+            applicationId "io.github.andrew_su.passwordgenerator2.mock"
+            versionName '1.0.0-mock'
+        }
+        full {
+            applicationId 'io.github.andrew_su.passwordgenerator2.full'
+            versionName '1.0.0-full'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:22.0.0'
-    compile 'io.pivotal:arca-provider:1.0-beta.3'
+    compile 'com.android.support:appcompat-v7:22.2.0'
+
+    // Dependency Injection
     compile 'com.jakewharton:butterknife:6.1.0'
+    apt 'com.google.dagger:dagger:2.0.1'
+    compile 'com.google.dagger:dagger-compiler:2.0.1'
+    compile 'org.glassfish:javax.annotation:10.0-b28'
+
+    // Parse
+    compile 'com.parse.bolts:bolts-android:1.2.0'
+
+    // Database
+    compile 'io.pivotal:arca-provider:1.0-beta.3'
 }

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AA PasswordGenerator</string>
+    <string name="account_name">Account Name</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="save">Save</string>
+    <string name="generate">generate</string>
+    <string name="title_activity_password">PasswordActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>

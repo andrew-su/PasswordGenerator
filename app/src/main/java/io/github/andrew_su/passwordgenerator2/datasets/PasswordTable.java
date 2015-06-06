@@ -1,8 +1,8 @@
-package io.github.andrew_su.passwordgenerator.datasets;
+package io.github.andrew_su.passwordgenerator2.datasets;
 
 import android.content.ContentProviderOperation;
 
-import io.github.andrew_su.passwordgenerator.providers.PasswordContentProvider;
+import io.github.andrew_su.passwordgenerator2.providers.PasswordContentProvider;
 import io.pivotal.arca.provider.Column;
 import io.pivotal.arca.provider.SQLiteTable;
 import io.pivotal.arca.provider.Unique;
